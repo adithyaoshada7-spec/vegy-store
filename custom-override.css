@@ -1,0 +1,72 @@
+/* Custom tweaks for Ranketha Organics Foods Demo */
+
+/* Brand Logo Styling */
+.logo-img,
+.header-logo img,
+.navbar-brand img {
+  height: 48px !important;
+  max-width: 260px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+.mobile-logo,
+.mobile-logo-sidebar {
+  height: 40px !important;
+  max-width: 220px !important;
+  object-fit: contain !important;
+}
+
+.footer-logo {
+  height: 52px !important;
+  max-width: 270px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
+/* Category menu dropdown behavior */
+.category-menu-root {
+  position: relative;
+}
+
+.category-menu-root:hover .categories-menu,
+.category-menu-root:hover .category-dropdown {
+  display: block;
+}
+
+/* Hero Carousel */
+.hero-carousel .carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+.hero-slide {
+  background-size: cover;
+  background-position: center;
+  min-height: 460px;
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    min-height: 320px;
+  }
+}
+
+/* Product Card Polish */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Cart badge indicator */
+.cart-badge, .header-cart-count {
+  background-color: #2d6a1d !important;
+  color: #fff !important;
+  font-size: 11px;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-weight: 700;
+}
